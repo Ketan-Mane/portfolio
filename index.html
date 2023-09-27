@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketan Mane | Portfolio</title>
+    <link rel="icon" href="./static/media/images/KM.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/434b6475b4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0V54WEJLH9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0V54WEJLH9');
+    </script>
+</head>
+<body>
+    <script src="./static/script.js"></script>
+
+    <div class="message-box">
+        <div class="message">
+            <p id="response"></p>
+        </div>
+    </div>
+ 
+    <header>
+
+        <div class="page-icon">
+            <a href="https://ketan-mane.web.app"><img src="./static/media/images/KM.png" alt="icon"></a>
+        </div>
+        <div class="navbar">
+            <button id="menu"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav">
+                <a href="#home"><p>Home</p></a>
+                <a href="#about"><p>About</p></a>
+                <a href="#portfolio"><p>Portfolio</p></a>
+                <a href="#skills"><p>Skills</p></a>
+                <a href="#contact"><p>Contact</p></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container-home">
+            <div class="home-img-block">
+                <div class="cover"></div>
+            </div>
+            <div class="animi-box">
+                <h1>Hello, I'm</h1>
+                <div class="name-text">
+                    <span>K</span>
+                    <span>E</span>
+                    <span>T</span>
+                    <span>A</span>
+                    <span>N</span>
+                    <span>&nbsp;</span>
+                    <span style="color: rgb(255, 145, 0);">M</span>
+                    <span style="color: rgb(255, 145, 0);">A</span>
+                    <span style="color: rgb(255, 145, 0);">N</span>
+                    <span style="color: rgb(255, 145, 0);">E</span>
+                </div>
+                <h3>I'm into <span id="typed"></span></h3>
+                <p><a href="#About" class="about-btn">About Me &nbsp;<i class="fa-solid fa-arrow-down"></i></a></p>
+            </div>
+        </div>
+    </section><br><br>
+
+    <section id="about" >
+        <div class="container-about" >
+           
+            <div class="box">
+                <div class="left">
+                    <div class="imageBlock">
+                        <img src="./static/media/images/about-bg.png">
+                    </div>
+                </div>
+                <div class="right">
+                   <div class="about">
+                        <h1>ABOUT</h1>
+                        <h3>Hi, I'm Ketan</h3>
+                   </div>
+                   <div class="about-info">
+                        <p data-aos="fade-down" data-aos-duration="1000">I am a dedicated and passionate Software and Web Application developer with a strong foundation in computer science.</p>
+                        <p data-aos="fade-down" data-aos-duration="1000">My journey in the world of technology began with a Bachelor of Science in Computer Science, and I've since honed my skills to become proficient in developing Software and Web Applications. With a commitment to excellence and a keen eye for detail, I'm eager to bring innovative solutions to life through code.</p>
+                        <p data-aos="fade-down" data-aos-duration="1000"><span>Email :</span> <a href="mailto:maneketan101@gmail.com">maneketan101@gmail.com</a></p>
+                        <p data-aos="fade-down" data-aos-duration="1000"><span>Place :</span> Navi Mumbai, India - 410218</p>
+                        <p data-aos="fade-down" data-aos-duration="1000"><a href="./static/media/Ketan-Mane_Resume.pdf" target="_blank" id="resume">Resume &nbsp;<i class="fa-solid fa-angle-right"></i></a></p>
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+    </section><br><br>
+
+    <section id="portfolio" >
+        <div class="container-portfolio">
+            <div class="title">Projects</div>
+            <div class="box" data-aos="fade-down" data-aos-duration="1000">
+ 
+                <div class="project-card">
+                    <div class="imageBox">
+                        <img src="./static/media/images/JavaProject.png">
+                    </div>
+                    <div class="content">
+                        <h1>MarketEase</h1>
+                        <p>Created Desktop Application for grocery shop.</p>
+                        <p>In this application user can maintain stock reports, print bill and add new products</p>
+                        <p>We can simply add product by scanning product barcode.</p>
+                        <p>Tech Stack : Java, H2 Database, Swing</p>
+                        <!-- <a href="" class="demo-btn">View Demo</a> -->
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="imageBox">
+                        <img src="./static/media/images/RentWheelz.png">
+                    </div>
+                    <div class="content">
+                        <h1>RentWheelz</h1>
+                        <p>This is an Web Application to book self drive vehicles.Customer can check available vehicles and book them.Vehicle owner can accept and decline booking request</p>
+                        <p>Admin can add new vehicle brands and verify customers details</p>
+                        <p>Tech Stack : HTML, CSS, Javascript, Ajax, PHP, MySQL</p>
+                        <!-- <a href="" class="demo-btn">View Demo</a> -->
+                    </div>
+                </div>
+
+                <div class="project-card" >
+                    <div class="imageBox">
+                        <img src="./static/media/images/Portfolio.png">
+                    </div>
+                    <div class="content">
+                        <h1>Portfolio Website</h1>
+                        <p>This is my personal portfolio website which is created to show my works and skills.</p>
+                        <p>Tech Stack : HTML, CSS, jQuery</p>
+                        <!-- <a href="" class="demo-btn">View Demo</a> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><br><br>
+
+    <section id="skills" >
+        <div class="container-skills" >
+            <div class="title">Tech Stack</div>
+            <div class="skill-box">
+
+                <div class="skill-card" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./static/media/icons/java.png">
+                        <p>Java</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./static/media/icons/php.png">
+                        <p>PHP</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./static/media/icons/python.png">
+                        <p>Python</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./static/media/icons/javascript.png">
+                        <p>JavaScript</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./static/media/icons/html.png">
+                        <p>HTML5</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./static/media/icons/css.png">
+                        <p>CSS3</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./static/media/icons/mysql.png">
+                        <p>MySQL</p>
+                </div>
+
+                <div class="skill-card" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="./static/media/icons/jquery.png">
+                        <p>jQuery</p>
+                </div>
+
+            </div>
+        </div>
+    </section><br><br>
+
+    <section id="contact">
+        <br><br>
+        <div class="container-contact">
+            <div class="contact-heading">
+                <div class="title">CONTACT</div>
+                <p>Get In Touch</p>
+            </div>
+            
+            <div class="box">
+                <div class="left">
+                    <img src="./static/media/images/contact-bg.png">
+                </div>
+                <div class="right" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="get-touch">
+                        <h1>Let's Connect</h1>
+                        <p>I'm always eager to explore new opportunities and collaborate on exciting projects.</p>
+                        <p> If you're interested in working with me or have any questions, 
+                            please don't hesitate to reach out. You can find me on LinkedIn, 
+                            GitHub, or by sending me an email at <a href="mailto:maneketan101@gmail.com" style="color: rgb(255, 196, 0);">maneketan101@gmail.com</a>.</p>
+                    </div>
+                    <div class="contact-form">
+                        <form method="POST" id="form">
+                            <input type="text" placeholder="Name" name="name" required class="form-fields">
+                            <input type="email" placeholder="Email" name="email"  required class="form-fields">
+                            <textarea placeholder="Message" name="message"  required class="form-fields" style="height: 80px;"></textarea>
+                            <button class="sendMsg">SEND <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+             
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="container-footer">
+
+                <div class="box">
+                    
+                    <a target="_blank" href="https://linkedin.com/in/ketan-mane-98b7b2249"><i class="fa-brands fa-linkedin"></i></a>
+    
+                    <a target="_blank" href="mailto:maneketan101@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    
+                    <a target="_blank" href="https://www.instagram.com/" style="font-size: 23px;"><i class="fa-brands fa-instagram"></i></a>
+    
+                    <a target="_blank" href="https://github.com/Ketan-Mane" style="font-size: 23px;"><i class="fa-brands fa-github"></i></a>
+                       
+                </div>
+
+            <hr>
+
+            <p style="color: #fff;font-size: 14px;">Designed & Developed By Ketan Mane</p>
+        </div>
+    </section>
+</body>
+</html>
